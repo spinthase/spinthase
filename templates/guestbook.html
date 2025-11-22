@@ -43,8 +43,6 @@
                 border-style: dotted;
                 border-width: medium;
                 border-color: #007e2a;
-                display: flex;
-                flex-direction: column-reverse;
                 width: 85%;
                 padding: 8px;
                 margin-inline: auto;
@@ -78,8 +76,8 @@
 
             {% for entry in guestbook %}
             <div class="entry">
-                <p style="margin: 2px 4px; word-break: break-all;"><strong style="color: #007e2a;">{{ entry.name }}</strong> says</p>
                 <p class="entry-text">{{ entry.comment }}</p>
+                <p style="margin: 2px 4px; word-break: break-all;"><strong style="color: #007e2a;">{{ entry.name }}</strong> says</p>
             </div>
             {% endfor %}
         </div>
