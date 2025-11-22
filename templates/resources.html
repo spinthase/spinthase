@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>spinthase !</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="../static/css/style.css">
+        <link rel="stylesheet" href="../static/css/navbar.css">
+        <link href="https://fonts.googleapis.com/css2?family=Kirang+Haerang&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        {% include "navbar.html" %}
+
+        <div class="content">
+            <h1>Woah, resources?</h1>
+            <p>
+                Here, I'll be tracking the resources I've been currently using within my projects. 
+                They should be easily accessible, so feel free to check them out yourself!
+            </p> <br>
+
+            <h2>AI</h2>
+            <p>
+                ● <a href="https://docs.google.com/document/d/1WjvCrQhljXQh4zOblmlXFlC-wWTWfc6f9XZKGRN_6eU/edit?usp=sharing">
+                    AP293: Reading Material on Explainable AI and Neuro</a> —
+            </p>
+            <p>
+                I fell into a rabbithole of post-hoc explanation methods while developing an AI model 
+                to predict the aqueous solubility of drugs; this was so interesting that I wanted to 
+                learn more about explainability/interpretability! Then, I stumbled upon the field of 
+                mechanistic interpretability. <br><br>
+                I think this document is a dense trove of resources that I'm still working my way 
+                through, slowly but surely.
+            </p> <br>
+            
+            <h2>Web Development</h2>
+            <p>
+                ● <a href="https://flask.palletsprojects.com/en/stable/">Flask</a> and 
+                <a href="https://docs.sqlalchemy.org/en/20/index.html">SQLAlchemy</a> 
+                (and I suppose <a href="https://jinja.palletsprojects.com/en/stable/">Jinja</a> too) —
+            </p>
+            <p>
+                Flask serves as the backbone to this website, with SQLAlchemy and Jinja used as Flask 
+                extensions. From a brief stint with Django in the past, I found Flask much easier to 
+                learn and the immense documentation was super helpful to pore over.
+            </p>
+            <p>
+                ● <a href="https://ribo.zone/">ribo.zone</a> —
+            </p>
+            <p>
+                An inspiration for my website :) Their site itself is both fun to navigate through, and 
+                has cool resources for fellow webdev hobbyists.
+            </p>
+            <br>
+
+            <h2>Computational Chemistry</h2>
+            <p>
+                ● <a href="https://autodock.scripps.edu/">AutoDock</a> and its accompanying 
+                <a href="https://ccsb.scripps.edu/mgltools/">MGLTools</a> —
+            </p>
+            <p>
+                Free molecular docking software with an excellent 
+                <a href="https://www.youtube.com/watch?v=k6tqCeDIwEk">tutorial</a>. MGLTools also 
+                provides the other tools necessary for docking, like a molecular viewing tool, 
+                specifically created for AutoDock so you don't need to shop around.
+            </p>
+
+        </div>
+
+        <footer></footer>
+    </body>
+</html>

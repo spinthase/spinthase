@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>spinthase !</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="../static/css/style.css">
+        <link rel="stylesheet" href="../static/css/navbar.css">
+        <link href="https://fonts.googleapis.com/css2?family=Kirang+Haerang&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+        <style>
+            .form {
+                width: 100%;
+                border-style: solid;
+                border-color: #007e2a;
+                background-color: #dbf4e8;
+                margin-top: 5px;
+                margin-bottom: 5px;
+                padding: 8px;
+                font-family: Verdana, Tahoma, sans-serif;
+                font-size: 16px;
+            }
+
+            .submit {
+                border: none;
+                border-radius: 12px;
+                margin-top: 5px;
+                margin-bottom: 5px;
+                padding: 8px;
+                width: 100px;
+                background-color: #007e2a;
+                color: #dbf4e8;
+                font-size: 14px;
+            }
+
+            .submit:hover {
+                background-color: #c206a5;
+                cursor: pointer;
+            }
+
+            .entry {
+                border-style: dotted;
+                border-width: medium;
+                border-color: #007e2a;
+                width: 85%;
+                padding: 8px;
+                margin-inline: auto;
+                margin-top: 8px;
+                margin-bottom: 12px;
+            }
+
+            .entry-text {
+                margin: 6px 24px;
+                font-size: 14px;
+                font-style: italic;
+            }
+        </style>
+    </head>
+
+    <body>
+        {% include "navbar.html" %}
+
+        <div class="content">
+            <h1>Hello, Guest!</h1>
+            <p>Have something you want to tell me? Write your message below:</p> <br>
+            
+            <form style="width: 50%; margin: auto;" method="post" action="/add_entry">
+                <input class="form" type="text" id="name" name="name" placeholder="Name ..." required> <br>
+                <textarea class="form" id="comment" name="comment" rows="4" placeholder="Message ..." required></textarea>
+                <div style="display: flex; justify-content: center;">
+                    <button class="submit" type="submit">Submit</button>
+                </div>
+            </form> <br><br>
+
+            {% for entry in guestbook %}
+            <div class="entry">
+                <p style="margin: 2px 4px;"><strong style="color: #007e2a;">{{ entry.name }}</strong> says</p>
+                <p class="entry-text">{{ entry.comment }}</p>
+            </div>
+            {% endfor %}
+        </div>
+
+        <footer></footer>
+    </body>
+</html>

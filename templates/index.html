@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>spinthase !</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link href="https://fonts.googleapis.com/css2?family=Kirang+Haerang&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../static/css/style.css">
+        <link rel="stylesheet" href="../static/css/navbar.css">
+
+        <style>
+            .blink {
+                animation: blinker 1s infinite;
+            }
+            
+            @keyframes blinker {
+                60% {
+                    opacity: 0;
+                }
+            }
+
+            .content-li {
+                font-family: Verdana, Tahoma, sans-serif;
+                margin: auto;
+                margin-top: 10px;
+            }
+
+            @media screen and (max-width: 600px) {
+                .video {
+                    width: 250px;
+                    height: 141px;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        {% include "navbar.html" %}
+
+        <div class="content">
+            <h1>Spinning <span class="blink">█</span></h1>
+            <p>
+                Hello, welcome to this website—a spinning motor of sorts ૮(˶•ᵕ•˶)੭ <br><br>
+                I'll (hopefully) continue updating these collections of interests and projects; 
+                you'll probably garner some sense of my identity here too, isn't the internet 
+                beautiful? <br><br>
+                Enjoy browsing :D <br>
+                (P.S. Return to this homepage quickly by clicking that ATP)
+            </p> <br>
+
+            <h2>What are your interests?</h2>
+            <p>
+                As it stands, I'm mainly interested in:
+                <ul>
+                    <li class="content-li">Coding, of all varieties
+                    <ul>
+                        <li class="content-li" style="width: 100%;">
+                            I've been wanting to learn more about AI, especially mechanistic interpretability, 
+                            AI neuroscience and FAT principles recently!
+                        </li>
+                        <li class="content-li" style="margin-top: 6px; width: 100%;">
+                            Working on random projects is fun too (case in point, this site); 
+                            I enjoy learning new tools, frameworks etc. and feeling my neurons fire (whoosh!)
+                        </li>
+                    </ul>
+                </li>
+                <li class="content-li">Computational chemistry, especially for drug discovery</li>
+                </ul>
+            </p>
+
+            <p>
+                <br>In terms of hobbies, I mainly enjoy:
+                <ul>
+                    <li class="content-li">Drawing, both traditionally and digitally</li>
+                <li class="content-li">
+                    Reading (find my Goodreads <a href="https://www.goodreads.com/user/show/187138632-toast">here!</a>)
+                </li>
+                <li class="content-li">
+                    Music, drop a recommendation in my <a href="guestbook">guestbook</a> :)
+                </li>
+                </ul>
+            </p>
+
+            <br>
+            
+            <div style="border-style: dashed; border-width: medium; border-color: #007e2a; width: 85%; margin-inline: auto;">
+                <h2 style="margin-left: 20px; margin-right: 20px; margin-bottom: 10px;">
+                    ☆ What are you listening to?
+                </h2>
+                <p style="margin-left: 20px; margin-right: 20px; margin-bottom: 20px;">
+                    Well, lately I've been jamming to:
+                </p>
+                <div style="max-width: fit-content; margin-inline: auto; margin-bottom: 0%;">
+                    <iframe data-testid="embed-iframe" style="border-radius:12px; " src="https://open.spotify.com/embed/track/1XD4K4CGAKTIBmFpvuaFru?utm_source=generator"
+                    width="100%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                </div>
+                <p style="margin-left: 20px; margin-bottom: 20px;">So, is it nice?</p>
+            </div> <br>
+
+            <h2>And what does "spinthase" mean??</h2>
+            <p>
+                It's a reference to the ATP synthase enzyme which acts like a motor, spinning to synthesise 
+                ATP. Isn't its movement kinda mesmerising?
+            </p> <br><br>
+            
+            <div style="max-width: fit-content; margin-inline: auto;">
+                <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/3y1dO4nNaKY?si=A_-tvsE9qiacy-Rj"
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <footer></footer>
+    </body>
+</html>

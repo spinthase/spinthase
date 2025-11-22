@@ -1,0 +1,56 @@
+.navbar {
+    list-style-type: none;
+    overflow: hidden;
+    margin: 0%;
+    padding: 0%;
+}
+
+.navbar li {
+    float: right;
+}
+
+.navbar li:last-child {
+    float: left;
+}
+
+.nav-item {
+    text-decoration: none;
+    display: inline-block;
+    padding: 14px 20px;
+}
+
+.nav-item h3 {
+    margin-top: 10px;
+    color: #1f3003;
+}
+
+.nav-item h1:hover {
+    color: #c206a5;
+}
+
+.nav-item h3:hover {
+    color: #c206a5;
+}
+
+.nav-home {
+    width: 70%;
+    display: block;
+    margin: auto;
+}
+
+.nav-home:hover {
+    content: url("../images/adp.png");
+}
+
+@media screen and (max-width: 600px) {
+    .navbar li {
+        max-width: fit-content;
+        margin-inline: auto;
+        float: none;
+    }
+    .navbar li:last-child {
+        max-width: fit-content;
+        margin-inline: auto;
+        float: none;
+    }
+}
